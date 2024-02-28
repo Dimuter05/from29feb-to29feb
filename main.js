@@ -13,7 +13,7 @@ window.onload = function onLoad() {
     if (now.getFullYear() == to && now > new Date(now.getFullYear(), 1, 29)) {
       to = to + 4;
     };
-    var start = new Date(from, 1, 29;
+    var start = new Date(from, 1, 29);
     var end = new Date(to, 1, 29);
     var done = (now-start) / (end-start);
     var percentStr = (100.0 * done).toString();
