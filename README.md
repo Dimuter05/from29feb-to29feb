@@ -1,5 +1,5 @@
-# year-progress-bar
+# От 29 февраля до 29 февраля в процентах
 
-Nowadays everything needs a progress bar.
+Прогрессбар от предыдущего 29 февраля до следующего.
 
-https://hugovk.github.io/year-progress-bar
+https://dimuter05.github.io/from29feb-to29feb/
