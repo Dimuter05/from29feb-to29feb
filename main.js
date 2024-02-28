@@ -5,8 +5,16 @@ window.onload = function onLoad() {
 
   function progress() {
     var now = new Date();
-    var start = new Date(now.getFullYear(), 0, 1);  // Start of this year
-    var end = new Date(now.getFullYear() + 1, 0, 1);  // End of this year
+    var from = Math.floor(now.getFullYear() / 4) * 4;
+    var to = Math.ceil(now.getFullYear() / 4) * 4;
+    if (now.getFullYear() == from && now < new Date(now.getFullYear(), 1, 29)) {
+      from = from - 4;
+    };
+    if (now.getFullYear() == to && now > new Date(now.getFullYear(), 1, 29)) {
+      to = to + 4;
+    };
+    var start = new Date(from, 1, 29;
+    var end = new Date(to, 1, 29);
     var done = (now-start) / (end-start);
     var percentStr = (100.0 * done).toString();
     if (done < 0.1) {
